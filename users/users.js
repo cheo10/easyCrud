@@ -14,12 +14,6 @@ class Users {
   static async delete() {}
 
   static async edit() {}
-
-  static async addToGroup() {}
-
-  static async deleteFromGroup() {}
-
-  static async editGroup() {}
 }
 
 module.exports = Users;
