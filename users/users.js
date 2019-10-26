@@ -3,8 +3,7 @@ const dbClient = require("../db/dbClient");
 class Users {
   static async listAll() {
     try {
-      let statement = "SELECT user_name FROM users";
-      return await dbClient.query(statement);
+      return await dbClient.query("SELECT * FROM users");
     } catch (error) {
       throw "getUsers error: " + JSON.stringify(error);
     }
