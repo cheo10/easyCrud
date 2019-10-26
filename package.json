@@ -4,7 +4,9 @@
   "description": "A fast CRUD API setup with Postgres and Heroku",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "production": "npm install && node express/server.js",
+    "development": "node --inspect express/server.js"
   },
   "repository": {
     "type": "git",
